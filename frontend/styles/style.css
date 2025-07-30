@@ -100,6 +100,11 @@ ACCENT COLOR:
    --orange-700: #9B6713;
    --orange-800: #64420C;
    --orange-900: #332106;
+
+   /* Logo colors */
+   --logo-background: #fefff2;
+   --logo-blue: #0E1B59;
+   --logo-yellow: #ECA400;
 }
 
 /* ==================== HTML DEFAULTS ==================== */
@@ -152,18 +157,38 @@ img {
     flex-direction: column;
     align-items: center; /* horizontal alignment */
 }
+
 .layout-mobile-portrait { width: var(--breakpoint-4); }
 .layout-mobile-landscape { width: var(--breakpoint-6); }
 .layout-tablet-portrait { width: var(--breakpoint-9); }
 .layout-tablet-landscape { width: var(--breakpoint-12); }
 .layout-tablet-laptop { width: var(--breakpoint-14); }
 
+.margin-section-bottom { margin-bottom: var(--gutter-row-4); }
+
 /* ==================== MEDIA QUERIES ==================== */
 
 /* ==================== UTILITY CLASSES ==================== */
 
-/* ==================== TEXT DECORATIONS */
+.button {
+    display: inline-block;
+    border: 0.1rem solid var(--gray-500);
+    border-radius: 0.5rem;
+    padding: var(--gutter-row-padding) var(--gutter-col-padding);
 
-/* ==================== ANCHORS */
+    background-color: var(--gray-300);
+    color: var(--gray-900);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
 
-/* ==================== HEADER ==================== */
+    box-shadow: 0px 6px 32px -10px var(--gray-300);
+    transition: background-color 200ms ease-in-out;
+}
+
+.button:hover {
+    border-color: var(--gray-900);
+    background-color: var(--green-400);
+    box-shadow: 0px 6px 32px -10px var(--green-400);
+    color: var(--gray-900);
+}
