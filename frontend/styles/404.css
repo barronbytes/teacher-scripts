@@ -1,4 +1,6 @@
-body { background-color: var(--logo-background); }
+body { 
+    background-color: var(--logo-background);
+}
 
 ul.flex h1 {
     font-size: var(--gutter-row-5);;
@@ -11,4 +13,16 @@ ul.flex img {
 
 ul.flex-vertical {
     row-gap: var(--gutter-row-1);
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+
+@media (max-width: 48rem) {
+  ul.flex h1 {
+    font-size: clamp(var(--gutter-row-3), calc(3.2rem + 3.75vw), var(--gutter-row-5));
+  }
+
+  ul.flex img {
+    height: clamp(var(--gutter-row-3), calc(3.2rem + 3.75vw), var(--gutter-row-5));
+  }
 }
