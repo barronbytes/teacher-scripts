@@ -1,0 +1,5 @@
+ul.grid {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--gutter-col-1);
+    justify-content: space-between;
+}

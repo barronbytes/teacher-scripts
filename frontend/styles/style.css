@@ -16,14 +16,14 @@ ACCENT COLOR:
 
     --breakpoint-3: 24rem;
     --breakpoint-4: 32rem; /* 4 columns, mobile-portrait */
-    --breakpoint-5: 54rem;
+    --breakpoint-5: 40rem;
     --breakpoint-6: 48rem; /* 6 columns, mobile-landscape */
     --breakpoint-9: 72rem; /* 9 columns, tablet-portrait */
     --breakpoint-12: 96rem; /* 12 columns, tablet-landscape */
     --breakpoint-14: 112rem; /* 14 columns, laptop-small */
 
-    --ff-serif: Georgia, 'Times New Roman', Times, serif;
-    --ff-sans-serif: Arial, sans-serif;
+    --ff-serif: "Merriweather", serif;
+    --ff-sans-serif: 'Montserrat', sans-serif;
     
     /* Gap values */
     --gutter-col-padding: 1rem;
@@ -45,10 +45,6 @@ ACCENT COLOR:
     --backup-row-3: -4.8rem;
     --backup-row-4: -6.4rem;
     --backup-row-5: -8.0rem;
-    --image-col-1: 6rem;
-    --image-col-2: 14rem;
-    --image-col-3: 22rem;
-    --image-col-4: 30rem;
 
     /* Gray Shades */
     --gray-100: #EDEDED;
@@ -110,14 +106,22 @@ ACCENT COLOR:
 
 html { font-size: 62.5%; }
 
-body { font-size: 1.6rem; overflow-x: hidden; }
+body {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* horizontal alignment */
+    height: 100vh;
+    font-size: 1.6rem;
+    overflow-x: hidden; 
+}
 
-h1 { font-size: 5.2rem; font-family: var(--ff-serif); line-height: 1; }
-h2 { font-size: 4.4rem; font-family: var(--ff-serif); line-height: 1; }
-h3 { font-size: 3.6rem; font-family: var(--ff-serif); line-height: 1; }
-h4 { font-size: 3rem; font-family: var(--ff-serif); line-height: 1; }
-h5 { font-size: 2.4rem; font-family: var(--ff-serif); line-height: 1; }
-h6 { font-size: 2rem; font-family: var(--ff-serif); line-height: 1; }
+h1, h2, h3, h4, h5, h6 { font-family: var(--ff-serif); line-height: 1; }
+h1 { font-size: 5.2rem; }
+h2 { font-size: 4.4rem; }
+h3 { font-size: 3.6rem; }
+h4 { font-size: 3rem; }
+h5 { font-size: 2.4rem; }
+h6 { font-size: 2rem; }
 
 a { cursor: pointer; }
 
@@ -127,6 +131,32 @@ img {
 }
 
 .hidden { display: none; }
+
+/* ==================== LAYOUTS ==================== */
+
+.grid { 
+    width: 100%;
+    display: grid;
+    align-items: center; /* Vertical alignment */
+    justify-items: center; /* Horizontal alignment */
+}
+.flex {
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    align-items: center; /* Vertical alignment */
+}
+.flex-vertical {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* horizontal alignment */
+}
+.layout-mobile-portrait { width: var(--breakpoint-4); }
+.layout-mobile-landscape { width: var(--breakpoint-6); }
+.layout-tablet-portrait { width: var(--breakpoint-9); }
+.layout-tablet-landscape { width: var(--breakpoint-12); }
+.layout-tablet-laptop { width: var(--breakpoint-14); }
 
 /* ==================== MEDIA QUERIES ==================== */
 
