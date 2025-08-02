@@ -1,0 +1,6 @@
+header.grid {
+    align-items: start; /* Vertical alignment */
+    justify-items: center; /* Horizontal alignment */
+}
+
+header img { height: var(--gutter-row-2); }
