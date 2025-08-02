@@ -15,17 +15,25 @@
     <link href="frontend/styles/header.css" rel="stylesheet">
 </head>
 <body>
-    <header class="grid layout-tablet-laptop">
-        <ul>
-            <li><a href="index.html" title="Homepage"><img src="frontend/assets/favicon-white.png" alt="" role="presentation"></a></li>
-            <li><a href="index.html" title="Homepage"><img src="frontend/assets/logo-name-only.png"></a></li>
-        </ul>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Generate Lesson</a></li>
-        </ul>
+    <!-- Skip Links (hidden visually, visible on focus) -->
+    <a class="skip-nav-link" href="#nav">Skip to navigation</a>
+    <a class="skip-nav-link" href="#footer">Skip to footer</a>
+
+    <header class="flex">
+        <a class="flex" href="index.html" aria-label="Homepage">
+            <img src="frontend/assets/favicon-white.png" alt="" role="presentation">
+            <img src="frontend/assets/logo-name-only.png" alt="Teacher Scripts logo">
+        </a>
+        <nav id="nav" tabindex="-1" class="flex" aria-label="Main navigation">
+            <ul class="flex">
+                <li class="button-menu"><a href="frontend/pages/about.html">About</a></li>
+                <li class="button-menu"><a href="frontend/pages/product.html">Product</a></li>
+                <li class="button-menu"><a href="frontend/pages/contact.html">Contact</a></li>
+            </ul>
+            <a class="menu-items button-main" href="frontend/pages/generate-lesson.html">New Lesson</a>
+            <button class="button-toggle-main" aria-controls="mobile-section"><img src="frontend/assets/nav-mobile-open.png" alt="Open mobile menu"></button>
+        </nav>
     </header>
+    <footer id="footer" tabindex="-1">Default footer</footer>
 </body>
 </html>

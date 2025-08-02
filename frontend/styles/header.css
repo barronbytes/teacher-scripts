@@ -1,6 +1,17 @@
-header.grid {
-    align-items: start; /* Vertical alignment */
-    justify-items: center; /* Horizontal alignment */
+header {
+    justify-content: space-between;
+    padding: var(--gutter-row-2) 0;
 }
 
-header img { height: var(--gutter-row-2); }
+header a img {
+    height: var(--gutter-row-2);
+    margin-right: var(--gutter-row-1);
+}
+
+#nav ul li, .menu-items {
+    margin-left: var(--gutter-row-1);
+}
+
+#nav img {
+    height: 4.1rem;
+}
