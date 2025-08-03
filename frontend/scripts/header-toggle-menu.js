@@ -14,13 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     openBtn.addEventListener("click", () => {
-      mobileMenu.style.display = "flex";
-      mobileMenu.setAttribute("aria-expanded", "true");
+      mobileMenu.setAttribute("data-visible", "true");
     });
 
     closeBtn.addEventListener("click", () => {
-      mobileMenu.style.display = "none";
-      mobileMenu.setAttribute("aria-expanded", "false");
+      mobileMenu.setAttribute("data-visible", "false");
     });
   });
 });
