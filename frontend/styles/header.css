@@ -29,7 +29,7 @@ button.toggle-menu { cursor: pointer; }
     visibility: hidden;
     display: flex;
     flex-direction: column;
-    
+
     position: fixed;
     z-index: 1000;
     inset: 0;
@@ -71,9 +71,31 @@ button.toggle-menu { cursor: pointer; }
 
 #mobile-section button img { height: 4.1rem; }
 
-#mobile-section ul { gap: var(--gutter-row-1); }
+#mobile-section ul {
+    align-items: center; /* horizontal alignment */
+}
 
-#mobile-section a:hover { color: var(--logo-yellow); }
+#mobile-section ul li {
+    width: 60%;
+}
+
+#mobile-section a {
+    display: block;
+    padding: var(--gutter-row-1) 0;
+    border-top: 0.1rem dashed var(--gray-100);
+    color: var(--gray-100);
+}
+
+#mobile-section a:last-child {
+    border-bottom: 0.1rem dashed var(--gray-100);
+}
+
+#mobile-section a:hover { 
+    color: var(--logo-yellow);
+    padding-left: var(--gutter-col-padding);
+    border-top: 0.1rem dashed var(--logo-yellow);
+    border-bottom: 0.1rem dashed var(--logo-yellow);
+}
 
 /* ==================== MEDIA QUERIES ==================== */
 
