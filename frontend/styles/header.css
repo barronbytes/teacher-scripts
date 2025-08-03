@@ -21,9 +21,45 @@ header a img {
     border-radius: 0.5rem;
 }
 
+/* ==================== MOBILE MENU ==================== */
+
+#mobile-section {
+    height: 100vh;
+    padding: var(--gutter-row-1);
+    gap: var(--gutter-row-4);
+    background-color: var(--gray-900);
+    color: var(--gray-100);
+    font-family: var(--ff-serif);
+}
+
+#mobile-section button {
+    width: auto;
+    max-width: fit-content;
+    align-self: flex-end;
+    border: 0.1rem solid var(--gray-100);
+    background: var(--gray-100);
+}
+
+#mobile-section button:hover {
+    box-shadow: 0px 6px 32px -10px var(--logo-yellow);
+    background: var(--logo-yellow);
+}
+
+#mobile-section button img {
+    height: 4.1rem;
+}
+
+#mobile-section ul {
+    gap: var(--gutter-row-1);
+}
+
+#mobile-section a:hover {
+    color: var(--logo-yellow);
+}
+
 /* ==================== MEDIA QUERIES ==================== */
 
-@media (max-width: 740px) {
+@media (max-width: 760px) {
   #nav ul { 
     display: none;
   }
@@ -34,7 +70,7 @@ header a img {
   }
 }
 
-@media (max-width: 510px) {
+@media (max-width: 540px) {
   a.flex img:last-child {
     display: none;
   }

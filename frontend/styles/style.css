@@ -196,18 +196,17 @@ a {
 .button-main {
     display: inline-block;
     padding: var(--gutter-row-padding) var(--gutter-col-padding);
-    border: 0.1rem solid var(--gray-900);
+    border: 0.1rem solid var(--logo-yellow);
     border-radius: 0.5rem;
-    background-color: var(--gray-900);
-    color: var(--gray-100);
+    background-color: var(--logo-yellow);
+    color: var(--gray-900);
     font-family: var(--ff-serif);
     transition: background-color 200ms ease-in-out;
 }
 
 .button-main:hover {
+    box-shadow: 0px 6px 32px -10px var(--logo-yellow);
     border-color: var(--gray-900);
-    background-color: var(--gray-100);
-    color: var(--gray-900);
 }
 
 .button-menu {
