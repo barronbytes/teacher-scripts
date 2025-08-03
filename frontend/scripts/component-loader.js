@@ -10,6 +10,7 @@ class ComponentLoader extends HTMLElement {
       })
       .then(html => {
         this.innerHTML = html;
+        this.dispatchEvent(new Event('component-loaded'));
       })
       .catch(err => {
         console.error(`ComponentLoader error (${src}):`, err);

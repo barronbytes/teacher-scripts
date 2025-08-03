@@ -2,7 +2,7 @@
 
 ...
 
-**Live Demo:** Check out the project today at [teacherscripts.com](http://teacherscripts.com/)!
+**Live Demo:** Check out the project today at [teacherscripts.com](http://teacherscripts.com/)! (link not active)
 
 ...
 
