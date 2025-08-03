@@ -8,10 +8,34 @@ header a img {
     margin-right: var(--gutter-row-1);
 }
 
+#nav ul { display: flex; }
+
 #nav ul li, .menu-items {
     margin-left: var(--gutter-row-1);
 }
 
-#nav img {
+#nav button { display: none; }
+
+#nav button img {
     height: 4.1rem;
+    border-radius: 0.5rem;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+
+@media (max-width: 740px) {
+  #nav ul { 
+    display: none;
+  }
+
+  #nav button {
+    display: block;
+    margin-left: var(--gutter-row-1);
+  }
+}
+
+@media (max-width: 510px) {
+  a.flex img:last-child {
+    display: none;
+  }
 }

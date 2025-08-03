@@ -111,7 +111,7 @@ html {
 }
 
 body {
-    width: var(--breakpoint-14);
+    max-width: var(--breakpoint-14);
     margin: 0 auto;
     font-family: var(--ff-sans-serif);
     font-size: 1.6rem;
