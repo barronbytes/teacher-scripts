@@ -166,11 +166,11 @@ a {
     flex-direction: column;
 }
 
-.layout-mobile-portrait { width: var(--breakpoint-4); }
-.layout-mobile-landscape { width: var(--breakpoint-6); }
-.layout-tablet-portrait { width: var(--breakpoint-9); }
-.layout-tablet-landscape { width: var(--breakpoint-12); }
-.layout-tablet-laptop { width: var(--breakpoint-14); }
+.layout-mobile-portrait { max-width: var(--breakpoint-4); }
+.layout-mobile-landscape { max-width: var(--breakpoint-6); }
+.layout-tablet-portrait { max-width: var(--breakpoint-9); }
+.layout-tablet-landscape { max-width: var(--breakpoint-12); }
+.layout-tablet-laptop { max-width: var(--breakpoint-14); }
 
 .margin-section-bottom { margin-bottom: var(--gutter-row-4); }
 

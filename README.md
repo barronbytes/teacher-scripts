@@ -60,18 +60,6 @@ teacher-scripts/
 
 ...
 
-### Setbacks
-
-...
-
-### Successes
-
-...
-
-### Improvements
-
-..
-
 ## Contributing
 
 ...
