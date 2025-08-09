@@ -1,32 +1,20 @@
 #footer {
-    width: 100vw;
-    min-height: 100vh;
-    margin-left: calc(50% - 50vw); /* center it, even when body is constrained */
-    align-items: flex-start;
-    justify-content: center;
-    border-top: 0.2rem solid var(--gray-900);
-    padding: var(--gutter-row-4) 0;
-    background-color: var(--gray-300);
+  width: 100vw;
+  height: 100vh;
+  align-items: self-start;
+  margin-left: calc(50% - 50vw);
+  border-top: 0.2rem solid var(--gray-900);
+  background-color: var(--gray-300);
 }
 
 .footer-content {
-    width: var(--breakpoint-14);
-    align-items: flex-start;
-    justify-content: space-between;
+  max-width: var(--breakpoint-14);
+  margin: 0 auto;
+  grid-template-columns: repeat(2, var(--breakpoint-4));
+  gap: var(--gutter-col-1);
+  justify-content: space-between;
 }
 
-.footer-content section.outer {
-    gap: var(--gutter-row-4);
-}
-
-.footer-content section.inner {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.footer-content section.inner h6 {
-    margin-bottom: var(--gutter-row-1);
-}
-
-.footer-content section:last-of-type p:first-of-type {
-  margin-bottom: var(--gutter-row-4);
+.footer-col-1, .footer-col-2 {
+  background-color: red;
 }
