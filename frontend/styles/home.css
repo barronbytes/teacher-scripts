@@ -4,10 +4,14 @@
   border-top: 0.2rem solid var(--gray-900);
   align-items: start;
   color: var(--gray-700);
+  text-align: center;
 }
 
 #home-content {
-    align-items: center;
+  max-width: var(--breakpoint-14);
+  margin: var(--gutter-row-4) auto;
+  padding: 0 var(--gutter-col-padding);
+  align-items: center;
 }
 
 #home-content h6 {

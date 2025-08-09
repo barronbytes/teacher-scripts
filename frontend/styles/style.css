@@ -177,6 +177,15 @@ a {
 .padding-section-top { padding-top: var(--gutter-row-4); }
 .padding-section-bottom { padding-bottom: var(--gutter-row-4); }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 /* ==================== SKIP NAV LINKS ==================== */
 
 .skip-nav-link {

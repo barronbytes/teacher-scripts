@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loader.addEventListener("component-loaded", () => {
     const mobileMenu = document.querySelector("#mobile-section");
-    const openBtn = document.querySelector('button[aria-controls="mobile-section"] img[alt="Open mobile menu"]')?.closest("button");
-    const closeBtn = document.querySelector('button[aria-controls="mobile-section"] img[alt="Close mobile menu"]')?.closest("button");
+    const openBtn = document.querySelector('.toggle-menu.open');
+    const closeBtn = document.querySelector('.toggle-menu.close');
 
     if (!mobileMenu || !openBtn || !closeBtn) {
       console.error("Toggle elements not found after component load.");
@@ -15,10 +15,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     openBtn.addEventListener("click", () => {
       mobileMenu.setAttribute("data-visible", "true");
+      openBtn.setAttribute("aria-expanded", "true");
+      closeBtn.setAttribute("aria-expanded", "true");
     });
 
     closeBtn.addEventListener("click", () => {
       mobileMenu.setAttribute("data-visible", "false");
+      openBtn.setAttribute("aria-expanded", "false");
+      closeBtn.setAttribute("aria-expanded", "false");
+      openBtn.focus(); // return focus to the trigger button for keyboard users
     });
   });
 });

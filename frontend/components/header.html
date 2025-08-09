@@ -10,12 +10,19 @@
             <li class="button-menu"><a href="frontend/pages/contact.html">Contact</a></li>
         </ul>
         <a class="menu-items button-main" href="frontend/pages/generate-lesson.html">New Lesson</a>
-        <button class="toggle-menu" aria-controls="mobile-section"><img src="frontend/assets/nav-mobile-open.png" alt="Open mobile menu"></button>
+        <button class="toggle-menu open" aria-controls="mobile-section" aria-expanded="false">
+            <img src="frontend/assets/nav-mobile-open.png" alt="">
+            <span class="sr-only">Open mobile menu</span>
+        </button>
+
     </nav>
 </header>
 
 <section id="mobile-section" class="flex-y">
-    <button class="toggle-menu" aria-controls="mobile-section"><img src="frontend/assets/nav-mobile-close.png" alt="Close mobile menu"></button>
+    <button class="toggle-menu close" aria-controls="mobile-section" aria-expanded="false">
+        <img src="frontend/assets/nav-mobile-close.png" alt="Close mobile menu">
+        <span class="sr-only">Close mobile menu</span>
+    </button>
     <nav>
         <ul class="flex-y">
             <li><a href="frontend/pages/about.html">About</a></li>
