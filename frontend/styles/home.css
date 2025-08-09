@@ -1,0 +1,15 @@
+#home-main {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  border-top: 0.2rem solid var(--gray-900);
+  align-items: start;
+  color: var(--gray-700);
+}
+
+#home-content {
+    align-items: center;
+}
+
+#home-content h6 {
+  margin-top: var(--gutter-row-2);
+}
