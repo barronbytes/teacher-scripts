@@ -1,9 +1,7 @@
 #footer {
   width: 100vw;
-  min-height: 100vh;
   margin-left: calc(50% - 50vw);
   border-top: 0.2rem solid var(--gray-900);
-  padding-bottom: var(--gutter-row-4);
   align-items: start;
   background-color: var(--gray-300);
 }
@@ -11,7 +9,6 @@
 .footer-content {
   max-width: var(--breakpoint-14);
   margin: 0 auto;
-  padding-top: var(--gutter-row-4);
   grid-template-columns: repeat(2, var(--breakpoint-4));
   gap: var(--gutter-col-1);
   justify-content: space-between;
@@ -48,8 +45,9 @@
 }
 
 .footer-copyright {
-  display: block;
+  min-height: 100vh;
   margin: 0 auto;
+  display: block;
 }
 
 /* ==================== MEDIA QUERIES ==================== */

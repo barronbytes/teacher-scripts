@@ -172,7 +172,10 @@ a {
 .layout-tablet-landscape { max-width: var(--breakpoint-12); }
 .layout-tablet-laptop { max-width: var(--breakpoint-14); }
 
+.margin-section-top { margin-top: var(--gutter-row-4); }
 .margin-section-bottom { margin-bottom: var(--gutter-row-4); }
+.padding-section-top { padding-top: var(--gutter-row-4); }
+.padding-section-bottom { padding-bottom: var(--gutter-row-4); }
 
 /* ==================== SKIP NAV LINKS ==================== */
 
