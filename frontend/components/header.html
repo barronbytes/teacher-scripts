@@ -1,21 +1,22 @@
-<header class="flex">
-    <a class="flex" href="index.html" aria-label="Homepage">
-        <img src="frontend/assets/favicon-white.png" alt="" role="presentation">
-        <img src="frontend/assets/logo-name-only.png" alt="Teacher Scripts logo">
-    </a>
-    <nav id="nav" tabindex="-1" class="flex" aria-label="Main navigation">
-        <ul class="flex">
-            <li class="button-menu"><a href="frontend/pages/about.html">About</a></li>
-            <li class="button-menu"><a href="frontend/pages/product.html">Product</a></li>
-            <li class="button-menu"><a href="frontend/pages/contact.html">Contact</a></li>
-        </ul>
-        <a class="menu-items button-main" href="frontend/pages/generate-lesson.html">New Lesson</a>
-        <button class="toggle-menu open" aria-controls="mobile-section" aria-expanded="false">
-            <img src="frontend/assets/nav-mobile-open.png" alt="">
-            <span class="sr-only">Open mobile menu</span>
-        </button>
-
-    </nav>
+<header id="header" class="grid">
+    <div class="grid header-content">
+        <a class="flex" href="index.html" aria-label="Homepage">
+            <img class="logo-img" src="frontend/assets/favicon-white.png" alt="" role="presentation">
+            <img class="logo-img" src="frontend/assets/logo-name-only.png" alt="Teacher Scripts logo">
+        </a>
+        <nav id="nav" class="flex" tabindex="-1" aria-label="Main navigation">
+            <ul class="flex">
+                <li class="button-menu"><a href="frontend/pages/about.html">About</a></li>
+                <li class="button-menu"><a href="frontend/pages/product.html">Product</a></li>
+                <li class="button-menu"><a href="frontend/pages/contact.html">Contact</a></li>
+            </ul>
+            <a class="menu-items button-main" href="frontend/pages/generate-lesson.html">New Lesson</a>
+            <button class="toggle-menu open" aria-controls="mobile-section" aria-expanded="false">
+                <img src="frontend/assets/nav-mobile-open.png" alt="">
+                <span class="sr-only">Open mobile menu</span>
+            </button>
+        </nav>        
+    </div>
 </header>
 
 <section id="mobile-section" class="flex-y">

@@ -10,10 +10,31 @@
 #home-content {
   max-width: var(--breakpoint-14);
   margin: var(--gutter-row-4) auto;
-  padding: 0 var(--gutter-col-padding);
   align-items: center;
 }
 
-#home-content h6 {
+#home-content .cta-subheader {
   margin-top: var(--gutter-row-2);
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+
+@media (max-width: 520px) {
+  #home-content .cta-header {
+    font-size: 4.4rem;
+  }
+
+  #home-content .cta-subheader {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 440px) {
+  #home-content .cta-header {
+    font-size: 3.6rem;
+  }
+
+  #home-content .cta-subheader {
+    font-size: 1.6rem;
+  }
 }
