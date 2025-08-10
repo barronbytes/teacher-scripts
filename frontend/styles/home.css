@@ -15,6 +15,27 @@
 
 #home-content .cta-subheader {
   margin-top: var(--gutter-row-2);
+  margin-bottom: var(--gutter-row-4);
+}
+
+/* ==================== FORM ==================== */
+
+#learning-target {
+  width: var(--breakpoint-9);
+  border: 0.1rem solid var(--gray-500);
+  border-radius: 0.5rem;
+  padding: var(--gutter-row-padding) var(--gutter-col-padding);
+  color: var(--gray-900);
+}
+
+#learning-target:hover, #learning-target:focus {
+  border-color: var(--gray-900);
+  box-shadow: 0px 6px 32px -10px var(--gray-300); 
+  background-color: var(--gray-100);
+}
+
+input::placeholder {
+  color: var(--gray-500);
 }
 
 /* ==================== MEDIA QUERIES ==================== */
@@ -36,5 +57,23 @@
 
   #home-content .cta-subheader {
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 720px) {
+  #learning-target {
+    width: var(--breakpoint-6);
+  }
+}
+
+@media (max-width: 480px) {
+  #learning-target {
+    width: var(--breakpoint-5);
+  }
+}
+
+@media (max-width: 400px) {
+  #learning-target {
+    width: var(--breakpoint-4);
   }
 }

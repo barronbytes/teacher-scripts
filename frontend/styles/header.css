@@ -38,6 +38,10 @@
     height: var(--gutter-row-2);
 }
 
+#header .logo-img:first-of-type {
+    margin-right: var(--gutter-col-padding);
+}
+
 button.toggle-menu { cursor: pointer; }
 
 /* ==================== MOBILE MENU ==================== */
