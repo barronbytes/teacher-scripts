@@ -12,4 +12,5 @@ jobs:
           repository: barronbytes/teacher-scripts
           token: ${{ secrets.GH_A11Y_TOKEN }}
             # This token must have write access to the repo above (contents, issues, and PRs); more information below. Note: GitHub Actions’ `GITHUB_TOKEN` (https://docs.github.com/en/actions/tutorials/authenticate-with-github_token) cannot be used here.
-          cache_key: REPLACE_THIS # Provide a filename that will be used when caching results. We recommend including the name or domain of the site being scanning.
+          cache_key: teacher-scripts-a11y-scan-cache
+            # Provide a filename that will be used when caching results. We recommend including the name or domain of the site being scanning.
