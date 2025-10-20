@@ -8,9 +8,7 @@ jobs:
       - uses: github/accessibility-scanner@v2
         with:
           urls: | # Provide a newline-delimited list of URLs to scan; more information below.
-            REPLACE_THIS
+            https://barronbytes.github.io/teacher-scripts/
           repository: barronbytes/teacher-scripts
-          token: ${{ secrets.GH_A11Y_TOKEN }}
-            # This token must have write access to the repo above (contents, issues, and PRs); more information below. Note: GitHub Actions’ `GITHUB_TOKEN` (https://docs.github.com/en/actions/tutorials/authenticate-with-github_token) cannot be used here.
+          token: ${{ secrets.GH_A11Y_TOKEN }} # Fine-grained token with read/write access to repo on actions, contents, issues, and PRs.
           cache_key: teacher-scripts-a11y-scan-cache
-            # Provide a filename that will be used when caching results. We recommend including the name or domain of the site being scanning.
