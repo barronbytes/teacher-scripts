@@ -1,0 +1,14 @@
+{
+  // Disable validation only for GitHub Actions YAMLs
+  "[yaml]": {
+    "editor.validate": false
+  },
+  "yaml.schemas": {},
+  "yaml.customTags": [
+    "tag:yaml.org,2002:str",
+    "tag:yaml.org,2002:int",
+    "tag:yaml.org,2002:float",
+    "!secret",
+    "!include"
+  ]
+}
