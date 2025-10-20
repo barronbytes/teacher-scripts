@@ -11,4 +11,3 @@ jobs:
             https://barronbytes.github.io/teacher-scripts/
           repository: barronbytes/teacher-scripts
           token: ${{ secrets.GH_A11Y_TOKEN }} # Fine-grained token with read/write access to repo on actions, contents, issues, and PRs.
-          cache_key: teacher-scripts-a11y-scan-cache
