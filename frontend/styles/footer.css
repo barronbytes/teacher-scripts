@@ -32,8 +32,12 @@
   gap: var(--gutter-col-1);
 }
 
-.footer-col-1 .footer-nav h6 {
+.footer-col-1 .footer-nav .footer-link-header {
   margin-bottom: var(--gutter-row-1);
+  line-height: 1;
+  font-family: var(--ff-serif);
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .footer-col-2 p:first-of-type {
